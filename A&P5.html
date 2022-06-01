@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>Q5</h2>
+	<p id="demo"></p>
+	<script>
+		function person(first, last, age, eye){
+		this.firstname = first;
+		this.lastname = last;
+		this.age = age;
+		this.eyecolor = eye;
+	}
+
+	person.prototype.nationality = "Indian";
+	const me = new person("Meena", "N", 22, "brown");
+	document.getElementById('demo').innerHTML = "My nationality is"  +    me.nationality;
+</script>
+</body>
+</html>
